@@ -1,16 +1,10 @@
 import React from 'react'
-import {RotatingLines} from "react-loader-spinner"
+import FadeLoader from "react-spinners/FadeLoader";
 
 const Spinner = () => {
   return (
       <div className='w-full h-screen flex justify-center items-center'>
-          <RotatingLines
-              strokeColor="grey"
-              strokeWidth="5"
-              animationDuration="0.75"
-              width="96"
-              visible={true}
-          />
+      <FadeLoader color="gray" size={200} />
     </div>
   )
 }
